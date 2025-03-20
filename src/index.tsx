@@ -486,15 +486,11 @@
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"tela5",
 
-          styles:[
-              {
-                backgroundColor: '#101',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%',
-                width: '100%',
-              }
-              ],
+          styles:[`{
+  backgroundColor: "#fff",
+  height: "100%",
+  width: "100%" 
+ }`],
 
           screenElements:[
 
