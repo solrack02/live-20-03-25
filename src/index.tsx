@@ -249,6 +249,7 @@
     width: "100%"
 }`],    args,
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -290,6 +291,39 @@
 
             args,
           }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Ir p/ tela 5`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
         ],
 
             args,
@@ -300,6 +334,7 @@
 
           args,
         }}/>, 
+        
 
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"sc4",
@@ -433,6 +468,39 @@
             args,
           }}/>
         ],
+
+          functions:[()=>{}],
+
+          args,
+        }}/>, 
+
+        (...args: any) => <Elements.Screen3 pass={{
+          pathScreen:"tela5",
+
+          styles:[
+              {
+                backgroundColor: '#101',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+                width: '100%',
+              }
+              ],
+
+          screenElements:[() => {
+                  const textStyle = {
+                    fontSize: 20,
+                    color: '#fff2',
+                    textAlign:'center',
+                    maxWidth: 200,
+                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
+                  };
+
+                  return (
+                    <RN.Text style={textStyle}>
+                      {'Adicione Elementos nessa tela!'}
+                    </RN.Text>);
+                }],
 
           functions:[()=>{}],
 
